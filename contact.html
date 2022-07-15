@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <!-- NavBar -->
+        <nav class = "navbar">
+            <div>
+                <a href="index.html">
+                    <img  class = "primary-icon" src= "relax_icon.png" alt="">
+                </a>
+            </div>
+            <!-- Item List -->
+            <ul class = "nav-list" id = "navi-list">
+                <li class = "list-item">
+                    <a href="service.html">Services</a>
+                </li>
+                <li class = "list-item">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li class = "list-item">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+            <!-- Hamburgeer menu icon -->
+            <div class = "menu" id = "toggle-button">
+                <div class = "menu-line"></div>
+                <div class = "menu-line"></div>
+                <div class = "menu-line"></div>
+            </div>
+        </nav>
+
+    
+    <!-- Contact Form -->
+    <div class = "contactForm">
+        <form>
+            <label class = "contact-label" for = "fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label class = "contact-label" for = "lname">Last Name</label>
+            <input type = "text" id = "lname" name = "lastname" placeholder="Last name...">
+
+
+            <label class = "contact-label" for = "phone">Enter your Phone</label>
+            <input type = "tel" id = "phone" name = "phone" placeholder="123-323-2321">
+
+            <label class = "contact-label" for = "email">Enter your Email</label>
+            <input type = "email" id = "email" name = "email" placeholder="info@email.com">
+
+            <label class = "contact-label" for = "message">Message</label>
+            <input type = "text" id = "message" name = "message" placeholder="Type your message">
+
+            <input type="submit" value="Submit" class = "contact-button">
+
+
+        </form>
+    </div>
+
+    <!-- Script for Toggling the menu -->
+    <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const naviList = document.getElementById("navi-list");
+
+        toggleButton.addEventListener("click", () => {
+            naviList.classList.toggle("active");
+        })
+    </script>   
+</body>
+</html>

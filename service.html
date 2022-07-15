@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relax</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+        <!-- NavBar -->
+        <nav class = "navbar">
+            <div>
+                <a href="index.html">
+                    <img  class = "primary-icon" src= "relax_icon.png" alt="">
+                </a>
+            </div>
+            <!-- Item List -->
+            <ul class = "nav-list" id = "navi-list">
+                <li class = "list-item">
+                    <a href="service.html">Services</a>
+                </li>
+                <li class = "list-item">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li class = "list-item">
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+            <!-- Hamburgeer menu icon -->
+            <div class = "menu" id = "toggle-button">
+                <div class = "menu-line"></div>
+                <div class = "menu-line"></div>
+                <div class = "menu-line"></div>
+            </div>
+        </nav>
+        <!-- End of navbar -->
+        <h2 style="text-align: center; color: white;">30 Minute Workout</h2>
+        <div class = "fitness-container">
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gC_L9qAHVJ8" title="YouTube video player" frameborder="0"allowfullscreen></iframe>
+            </div>
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4OLfW8vbDZw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ml6cT4AZdqI" title="YouTube video player" frameborder="0"allowfullscreen></iframe>
+            </div>
+        </div>
+        <hr>
+        <h2 style="text-align: center; color: white;">No Jump Workout</h2>
+        <div class = "fitness-container">
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VxBRdmdZ1xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/rI_6l992GrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/f_sCBjwOh8o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <hr>
+        <h2 style="text-align: center; color: white;">Stretch</h2>
+        <div class = "fitness-container">
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FlAvRcz0zuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tFvt4iBRgFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class = "fitness-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VsAtgvd9PH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+            <!-- Script for Toggling the menu -->
+    <script>
+        const toggleButton = document.getElementById("toggle-button");
+        const naviList = document.getElementById("navi-list");
+
+        toggleButton.addEventListener("click", () => {
+            naviList.classList.toggle("active");
+        })
+    </script>   
+</body>
+</html>
